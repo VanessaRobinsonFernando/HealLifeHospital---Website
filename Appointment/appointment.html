@@ -1,0 +1,111 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Heal Life Hospital | Book an appointment</title>	
+
+	<link rel="icon" href="../Images/icon.png" type="image/png">
+	<link href="https://kit-pro.fontawesome.com/releases/v6.0.0/css/pro.min.css" rel="stylesheet">
+
+	<link href="../CSS/appointment.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+
+<!-- Navigation bar -->
+	<nav class="navbar">
+			<ul class="menu-list">
+				<li><a class="menu-link" href="../index.html">Home</a></li>
+				<li><a class="menu-link" href="../AboutUs/AboutUs.html">About Us</a></li>
+				<li><a class="menu-link" href="../FAQs/faqs.html">FAQs</a></li>
+				<li><a class="menu-link" href="../Login/login.html">Login</a></li>
+				<li><a class="menu-link" href="../Registration/registration.html">Register</a></li>
+			</ul>	
+			<img src="../Images/logoHalf.png">
+	</nav><br><br><br><br><br><br>
+<!-- end of Navigation bar -->
+
+<!--  -->
+	<div class="appointbody">
+		<h1><u>Request an Appointment</u></h1>
+		<div class="bodyBox">
+			<form action="../php/appointment.php" id="register" method="post" >
+					<input type="text" class="input-field" name="FName" placeholder="Enter Full Name" >
+
+					<input type="email" class="input-field" name="Email" placeholder="Enter Email Address" >
+
+					<input type="phone" class="input-field" name="phone" placeholder="Enter your mobile number (05xxxxxxxx)" >
+
+					<input type="phone" class="input-field" name="phone2" placeholder="Enter reference mobile number (05xxxxxxxx)" ><br>
+
+					<label class="location">Location:</label><br>
+					<select id="mySelect1" class="selection-field" name="location" >
+						<option>--Select Option--</option>
+						<option></option>	
+						<option>Al Barsha, Dubai</option>	
+						<option>Academic City, Dubai</option>	
+						<option>Silicon Oasis, Dubai</option>
+						<option>Riyadh, Abu Dhabi</option>
+						<option>Al Jurf, Ajman</option>
+						<option>Mushairef, Ajman</option>			
+						<option>Jumeirah, Dubai</option>	
+						<option>Al Khan, Sharjah</option>	
+					</select><br>
+
+					<label class="speciality">Speciality:</label><br>
+					<select id="mySelect2"  class="selection-field" name="speciality">
+						<option>--Select Option--</option>
+						<option>Speciality A</option>	
+						<option>Speciality B</option>	
+						<option>Speciality C</option>	
+						<option>Speciality D</option>
+						<option>Speciality E</option>	
+					</select><br>
+
+					<label class="doctor">Doctor:</label><br>
+					<select id="mySelect3" class="selection-field" name="doctor">
+						<option>--Select Option--</option>
+						<option>Redwan Kalash</option>	
+						<option>Jouhar Verma</option>	
+						<option>Sandar Kumar</option>	
+						<option>Amita Bhachan</option>
+						<option>Shah Rukhan</option>
+						<option>Rakesh Rajpal</option>
+						<option>Majid Alamoudihan</option>
+						<option>Zobia Tayyab</option>
+						<option>Vanessa Fernando </option>	
+						<option>Chris Hill</option>
+					</select><br>
+
+					<label class="preferDate">Preferred Date:</label>
+
+					<label class="preferTime">Preferred Time:</label><br>
+
+					<input type="date" name="date" class="date-field">
+					
+					<input type="Time" name="time" class="time-field"><br>
+
+					<input type="checkbox" name="terms"><span> I understand that this is only an appointment request and will be scheduled only after a confirmation call from HeaLife Hospital helpdesk.</span><br>
+					
+					<input  type="submit" value="SEND REQUEST" class="submit-button" onclick="alert('Hello world!')">
+			</form>
+		</div>
+	</div>
+<!--  -->
+
+<!-- Footer -->
+	<footer>
+		<img src="../Images/logo.png">
+		<hr>
+		<p>Copyright © 2022 HeaLife Group of Hospitals</p>
+	</footer>
+<!-- Footer ends -->
+
+<script>
+let m = Math.floor((Math.random() * 1000) + 1);
+document.getElementById("demo4").innerHTML = m;
+</script>
+
+<script src="../JavaScript/navigationBar.js"></script>
+
+</body>
+</html>

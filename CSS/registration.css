@@ -1,0 +1,72 @@
+body{
+	font-family: sans-serif;
+	background: url("../Images/regImg.png") no-repeat;
+	background-size: cover;
+	background-size: 100% 100%;
+	
+}
+
+h2{
+	margin-top: 2px;
+	margin-bottom: 5px;
+	font-family:"Georgia";
+}
+.reg{
+	border: 3px solid #f1f1f1;
+	max-width: 500px;
+	height: 620px;
+    width:550px;
+	margin: 2rem auto;
+	padding: 2rem;
+	border-radius: 5px;
+	background: white;
+}
+
+label{
+	display: block;
+	padding: 1rem 0 0.25rem;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family:"Georgia";
+}
+input[type=text], input[type=password], input[type=tel], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+ 
+}
+#sendBtn{
+	font-family:"Georgia";
+    background-color:  #182657;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius:25px;
+    padding: 1rem;
+	margin: 1rem 0;
+	text-transform: uppercase;
+	transition: 0.3s ease;
+}
+#sendBtn:hover{
+	background: #3498DB;
+}
+.cancelbtn {
+  font-family:"Georgia";
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 60px;
+  border-radius:25px;
+   background-color: #f44336;
+}
+.cancelbtn:hover {
+  opacity: 0.8;
+}
+.cancelbtn a{
+	text-decoration: none;
+}

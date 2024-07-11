@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Registration</title>
+	<link href="../CSS/registration.css" rel="stylesheet">
+</head>
+<body>
+
+	<form action="../php/registration.php" method="post" class="reg">
+
+		<h2>Patient Registration</h2>
+
+		<label for="first-name">
+			First Name
+		</label>
+		<input type="text" placeholder="Enter First Name" name="fname" required>
+
+		<label for="last-name">
+			Last Name
+		</label>
+		<input type="text" placeholder="Enter Last Name" name="lname" required>
+
+		<label for="phone">
+			Telephone
+		</label>
+		<input type="tel" placeholder="Enter Phone Number" name="number" required>
+
+		<label for="email">
+			Email
+		</label>
+		<input type="email" placeholder="Enter Email Id" name="email" required>
+
+		<label for="password">
+			Password
+		</label>
+		<input type="password" placeholder="Enter 8-character Password" name="pword" required>
+
+		<input type="submit" value="Register" id="sendBtn">
+		<a href="../index.html" class="back"> <div class="cancelbtn">Cancel </div></a>
+	</form>
+
+<script src="../JavaScript/navigationBar.js"></script>
+
+</body>
+</html>
